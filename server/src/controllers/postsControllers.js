@@ -1,10 +1,10 @@
-import PostMessage from "../models/postMessage.js";
+import Post from "../models/postSchema.js";
 
 export const getPosts = async (req, res) => {
   try {
-    const postMessage = await PostMessage.find();
+    const postMessage = await Post.find();
 
-    console.log(postMessages);
+    console.log(post);
 
     res.status(200).json(postMessages);
   } catch (error) {
